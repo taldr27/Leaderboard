@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.table-container {
+  width: 30%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 9px;
+}
+  
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.form-class {
+  display: flex;
+  flex-direction: column;
+}
