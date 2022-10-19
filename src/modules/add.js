@@ -1,3 +1,5 @@
+import refresh from './refresh.js';
+
 const add = async (e) => {
   e.preventDefault();
   const name = document.querySelector('#input-name').value;
@@ -10,13 +12,16 @@ const add = async (e) => {
     section.insertAdjacentElement('afterend', message);
     setTimeout(() => { message.remove(); }, 2000);
   } else {
-    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/T14uVhRrwlVGFtBvKPwB/scores/', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5eoEV0NiLVr80SAmBVHb/scores/', {
       method: 'POST',
       body: JSON.stringify({ user: name, score: scoreV }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
     });
+    document.querySelector('#input-name').value = '';
+    document.querySelector('#input-score').value = '';
+    refresh();
   }
 };
 
