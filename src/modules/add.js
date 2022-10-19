@@ -1,8 +1,6 @@
-import Scores from './const.js';
-import Interface from './interface.js';
-import Store from './store.js';
+import refresh from './refresh.js';
 
-const add = (e) => {
+const add = async (e) => {
   e.preventDefault();
   const name = document.querySelector('#input-name').value;
   const scoreV = document.querySelector('#input-score').value;
@@ -14,10 +12,16 @@ const add = (e) => {
     section.insertAdjacentElement('afterend', message);
     setTimeout(() => { message.remove(); }, 2000);
   } else {
-    const score = new Scores(name, scoreV);
-
-    Interface.addScoreToList(score);
-    Store.addScore(score);
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5eoEV0NiLVr80SAmBVHb/scores/', {
+      method: 'POST',
+      body: JSON.stringify({ user: name, score: scoreV }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    });
+    document.querySelector('#input-name').value = '';
+    document.querySelector('#input-score').value = '';
+    refresh();
   }
 };
 
