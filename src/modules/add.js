@@ -2,7 +2,7 @@
 // import Interface from './interface.js';
 // import Store from './store.js';
 
-const add = (e) => {
+const add = async (e) => {
   e.preventDefault();
   const name = document.querySelector('#input-name').value;
   const scoreV = document.querySelector('#input-score').value;
@@ -19,7 +19,7 @@ const add = (e) => {
     // Interface.addScoreToList(score);
     // Store.addScore(score);
 
-    fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/T14uVhRrwlVGFtBvKPwB/scores/', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/T14uVhRrwlVGFtBvKPwB/scores/', {
       method: 'POST',
       body: JSON.stringify({ user: name, score: scoreV }),
       headers: {
