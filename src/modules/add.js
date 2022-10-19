@@ -1,6 +1,6 @@
-import Scores from './const.js';
-import Interface from './interface.js';
-import Store from './store.js';
+// import Scores from './const.js';
+// import Interface from './interface.js';
+// import Store from './store.js';
 
 const add = (e) => {
   e.preventDefault();
@@ -18,21 +18,17 @@ const add = (e) => {
 
     // Interface.addScoreToList(score);
     // Store.addScore(score);
-    const data = { user: name, score: scoreV }; //gameID: ERLioRAyRDENKi33Awku;
 
-    fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ERLioRAyRDENKi33Awku/scores/', {
-      method: 'POST', // or 'PUT'
+    fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/T14uVhRrwlVGFtBvKPwB/scores/', {
+      method: 'POST',
+      body: JSON.stringify({ user: name, score: scoreV }),
       headers: {
-        'Content-Type': 'application/json',
+        'Content-type': 'application/json; charset=UTF-8',
       },
-      body: JSON.stringify(data),
     })
       .then((response) => response.json())
-      .then((data) => {
-        console.log('Success:', data);
-      });
+      .then((json) => console.log(json));
   }
-
 };
 
 export default add;

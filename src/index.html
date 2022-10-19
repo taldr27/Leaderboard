@@ -12,7 +12,7 @@
     <div class="main-container">
         <div class="table-container">
             <span>Recent Scores 
-                <input type="button" name="refresh" value="Refresh"> </span>
+                <input type="button" id="refreshBtn" name="refresh" value="Refresh"> </span>
             <table id="score-container">
     
             </table>
@@ -20,8 +20,8 @@
         <div id="score-container" >
             <form id="score-form" class="form-class" action="submit">
                 <span>Add your score</span>
-                <input type="text" id="input-name" placeholder="Your name">
-                <input type="text" id="input-score" placeholder="Your score">
+                <input type="text" id="input-name"  autocomplete="off" placeholder="Your name">
+                <input type="text" id="input-score" autocomplete="off" placeholder="Your score" >
             
                 <input type="submit" id="add-score" value="Submit">
             </form>
