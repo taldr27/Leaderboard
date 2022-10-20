@@ -69,7 +69,8 @@ tr:nth-child(even) {
   gap: 0.4em;
 }
 
-input, table {
+input,
+table {
   border: 2.5px solid black;
   padding: 0.3em;
 }
