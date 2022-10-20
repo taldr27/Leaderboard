@@ -13,7 +13,9 @@
 ## Getting Started
 
 ### Usage
-- npm install webpack webpack-cli --save-dev
+- git clone git@github.com:taldr27/Leaderboard.git
+- cd Leaderboard
+- npm install
 - npm run start 
 
 ### Live GitHub Page
