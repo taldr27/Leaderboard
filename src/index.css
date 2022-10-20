@@ -79,3 +79,11 @@ table {
   margin-bottom: 1em;
   text-align: center;
 }
+
+input[type="button"]:hover,
+[type="submit"]:hover {
+  cursor: pointer;
+  background-color: white; /* Green */
+  color: black;
+  transition-duration: 0.2s;
+}
