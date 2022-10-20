@@ -27,6 +27,32 @@ span {
   min-width: 40%;
 }
 
+.big-container {
+  background-color: #ddd;
+  width: 90%;
+  min-height: 90vh;
+  border-radius: 1em;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+#score-form-container {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
 td,
 th {
   border: 1px solid rgb(190, 190, 190);
