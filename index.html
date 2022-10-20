@@ -9,30 +9,33 @@
 <script defer src="runtime.js"></script><script defer src="index.js"></script></head>
 <body>
     <div class="big-container">
-        <h1>Leaderboard</h1>
-        <div class="main-container">
-            <div class="table-container">
-                <div class="refresh-title">
-                    <span>Recent Scores </span>
-                    <input type="button" id="refreshBtn" name="refresh" value="Refresh"> 
-                </div>
-
-                <table id="score-container">
-        
-                </table>
-            </div>
-            <div id="score-form-container" >
-                <form id="score-form" class="form-class" action="submit">
-                    <span>Add your score</span>
-                    <input type="text" id="input-name"  autocomplete="off" placeholder="Your name">
-                    <input type="text" id="input-score" autocomplete="off" placeholder="Your score" >
-                
-                    <input type="submit" id="add-score" value="Submit">
-                </form>
-        
-            </div>
+        <div class="card">
+            <h1>Leaderboard</h1>
+            <div class="main-container">
+                <div class="table-container">
+                    <div class="refresh-title">
+                        <span>Recent Scores </span>
+                        <input type="button" id="refreshBtn" name="refresh" value="Refresh"> 
+                    </div>
     
+                    <table id="score-container">
+            
+                    </table>
+                </div>
+                <div id="score-form-container" >
+                    <form id="score-form" class="form-class" action="submit">
+                        <span>Add your score</span>
+                        <input type="text" id="input-name"  autocomplete="off" placeholder="Your name">
+                        <input type="text" id="input-score" autocomplete="off" placeholder="Your score" >
+                    
+                        <input type="submit" id="add-score" value="Submit">
+                    </form>
+            
+                </div>
+        
+            </div>
         </div>
+
     </div>
 
 
