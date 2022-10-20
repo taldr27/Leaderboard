@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+h1 {
+  padding: 0.8em;
+}
+
+.card {
+  margin-top: 5em;
+}
+
+span {
+  font-weight: 700;
+}
+
+.table-container {
+  min-width: 40%;
+}
+
+.big-container {
+  background-color: #ddd;
+  width: 90%;
+  min-height: 90vh;
+  border-radius: 1em;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+#score-form-container {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 0.5em;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(190, 190, 190);
+}
+
+.form-class {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+input,
+table {
+  border: 2.5px solid black;
+  padding: 0.3em;
+}
+
+.refresh-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+input[type="button"]:hover,
+[type="submit"]:hover {
+  cursor: pointer;
+  background-color: white; /* Green */
+  color: black;
+  transition-duration: 0.2s;
+}
