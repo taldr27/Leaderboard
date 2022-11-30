@@ -19,7 +19,7 @@
 - npm run start 
 
 ### Live GitHub Page
-- Coming soon!
+- https://taldr27.github.io/Leaderboard/dist/
 
 ## Authors
 
