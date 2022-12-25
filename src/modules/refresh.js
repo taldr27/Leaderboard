@@ -3,10 +3,25 @@ const refresh = async () => {
   const json = await response.json();
   const convert = json.result.sort((a, b) => b.score - a.score);
   const list = document.querySelector('#score-container');
+  const max = [];
+  let high = 0;
+  convert.forEach((game) => max.push(game.score));
+  for (let i = 0; i < max.length; i += 1) {
+    if (high === 0) {
+      if (high <= max[i]) {
+        high = max[i];
+      }
+    }
+  }
+
   list.innerHTML = '';
   convert.forEach((game) => {
     const row = document.createElement('tr');
-    row.innerHTML = `<td>${game.user}:  ${game.score} 🏆</td>`;
+    if (game.score === high) {
+      row.innerHTML = `<td class="best">${game.user}:  ${game.score} You are the best one! 🥇🏆</td>`;
+    } else {
+      row.innerHTML = `<td>${game.user}:  ${game.score} 🎖️</td>`;
+    }
     list.appendChild(row);
   });
 };
