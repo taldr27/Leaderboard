@@ -30,7 +30,7 @@
                     <form id="score-form" class="form-class" action="submit">
                         <span>Add your score</span>
                         <input type="text" id="input-name"  autocomplete="off" placeholder="Your name">
-                        <input type="text" id="input-score" autocomplete="off" placeholder="Your score" >
+                        <input type="text" id="input-score" autocomplete="off" placeholder="Score (Numbers only)" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
                     
                         <input type="submit" id="add-score" value="Submit">
                     </form>

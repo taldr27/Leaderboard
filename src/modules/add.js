@@ -13,7 +13,7 @@ const add = async (e) => {
     section.insertAdjacentElement('afterend', message);
     setTimeout(() => { message.remove(); }, 2000);
   } else {
-    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5eoEV0NiLVr80SAmBVHb/scores/', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/gKe5ATGrB9p5WJ4187N5/scores/', {
       method: 'POST',
       body: JSON.stringify({ user: name, score: scoreV }),
       headers: {
@@ -22,6 +22,7 @@ const add = async (e) => {
     });
     e.target.reset();
     refresh();
+    // gKe5ATGrB9p5WJ4187N5
   }
 };
 
