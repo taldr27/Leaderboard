@@ -19,9 +19,9 @@ const refresh = async () => {
   convert.forEach((game) => {
     const row = document.createElement('tr');
     if (game.score === high) {
-      row.innerHTML = `<td class="best">${game.user}:  ${game.score} You are the best! 🥇🏆</td>`;
+      row.innerHTML = `<td class="best">${game.user}:  ${game.score} You are the best!🥇🏆</td>`;
     } else {
-      row.innerHTML = `<td>${game.user}:  ${game.score} 🎖️</td>`;
+      row.innerHTML = `<td>${game.user}:  ${game.score}🎖️</td>`;
     }
     list.appendChild(row);
   });
