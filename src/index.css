@@ -115,11 +115,35 @@ input[type="submit"] {
     height: 100vh;
     border-radius: 0;
   }
+
   .main-container {
     flex-direction: column;
     gap: 1em;
   }
+
   #score-form-container {
     align-self: auto;
   }
+
+  input[type="button"]:hover,
+  [type="submit"]:hover {
+    background-color: white;
+  }
+
+  input[type="button"]:active,
+  [type="submit"]:active {
+    background-color: #4c8e67;
+    transition-duration: 0.2s;
+  }
+
+  .p {
+    color: white;
+    margin-top: 1em;
+  }
+
+  input[type="text"]:focus {
+    outline: none;
+    border: 2.5px solid #729f79;
+  }
+
 }

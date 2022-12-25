@@ -8,6 +8,7 @@ const add = async (e) => {
   if (name === '' || scoreV === '') {
     const section = document.getElementById('score-container');
     const message = document.createElement('p');
+    message.className = 'p';
     message.innerHTML = 'Please put something into the fields';
     section.insertAdjacentElement('afterend', message);
     setTimeout(() => { message.remove(); }, 2000);
