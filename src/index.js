@@ -1,11 +1,14 @@
+// Importing the css file and the js modules
+
+import './index.css';
 import add from './modules/add.js';
 import refresh from './modules/refresh.js';
-import './index.css';
 
 document.querySelector('#score-form').addEventListener('submit', add);
 document.querySelector('#refreshBtn').addEventListener('click', refresh);
 window.onload = refresh();
 
+// Creating a new game ID
 const data = { name: 'game' };
 
 fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
