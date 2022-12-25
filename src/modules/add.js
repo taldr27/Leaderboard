@@ -19,9 +19,7 @@ const add = async (e) => {
         'Content-type': 'application/json; charset=UTF-8',
       },
     });
-    // e.target.reset();
-    document.querySelector('#input-name').value = '';
-    document.querySelector('#input-score').value = '';
+    e.target.reset();
     refresh();
   }
 };

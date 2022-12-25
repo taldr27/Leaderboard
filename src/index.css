@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Chivo Mono', monospace;
 }
 
 body {
@@ -8,15 +9,11 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: white;
+  background-color: #729f79;
 }
 
 h1 {
   padding: 0.8em;
-}
-
-.card {
-  margin-top: 5em;
 }
 
 span {
@@ -28,17 +25,22 @@ span {
 }
 
 .big-container {
-  background-color: #ddd;
+  background-color: #4c8e67;
   width: 90%;
   min-height: 90vh;
   border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
 }
 
 .main-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 4em;
 }
 
@@ -55,12 +57,16 @@ table {
 
 td,
 th {
-  border: 1px solid rgb(190, 190, 190);
+  border: 1px solid #4c8e67;
   padding: 0.5em;
 }
 
 tr:nth-child(even) {
-  background-color: rgb(190, 190, 190);
+  background-color: #729f79;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.431);
 }
 
 .form-class {
@@ -85,7 +91,11 @@ table {
 input[type="button"]:hover,
 [type="submit"]:hover {
   cursor: pointer;
-  background-color: white; /* Green */
-  color: black;
+  background-color: #4c8e67;
   transition-duration: 0.2s;
+}
+
+input[type="submit"] {
+  text-align: end;
+  align-self: flex-end;
 }
