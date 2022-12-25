@@ -25,13 +25,14 @@ span {
 }
 
 .big-container {
-  background-color: #4c8e67;
+  background-color: #00ccc0;
   width: 90%;
   height: 90vh;
   border-radius: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 .card {
@@ -58,16 +59,17 @@ table {
 
 td,
 th {
-  border: 1px solid #4c8e67;
+  border: 1px solid #33f5eb;
   padding: 0.5em;
 }
 
 tr:nth-child(even) {
-  background-color: #729f79;
+  background-color: #72F2EB;
 }
 
 tr:hover {
-  background-color: rgba(255, 255, 255, 0.431);
+  background-color: #FF4858;
+  border: #FF4858;
 }
 
 .form-class {
@@ -103,11 +105,15 @@ input[type="submit"] {
 
 @media only screen and (max-width: 768px) {
   body {
-    background-color: #4c8e67;
+    background-color: #023535;
   }
 
   h1 {
     padding: 0;
+  }
+
+  .card {
+    padding-top: 1em;
   }
 
   .big-container {
@@ -132,18 +138,18 @@ input[type="submit"] {
 
   input[type="button"]:active,
   [type="submit"]:active {
-    background-color: #4c8e67;
+    background-color: #00CCC0;
     transition-duration: 0.2s;
   }
 
   .p {
-    color: white;
+    color: black;
     margin-top: 1em;
   }
 
   input[type="text"]:focus {
     outline: none;
-    border: 2.5px solid #729f79;
+    border: 2.5px solid #72F2EB;
   }
 
 }
