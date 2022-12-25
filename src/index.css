@@ -9,7 +9,7 @@ body {
   color: white;
   align-items: center;
   justify-content: center;
-  background-image: url('./images/4589.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.424), rgba(7, 0, 0, 0.504)), url('./images/4589.webp');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -46,7 +46,7 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 4em;
+  gap: 3em;
 }
 
 #score-form-container {
