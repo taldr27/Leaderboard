@@ -3,6 +3,7 @@ const refresh = async () => {
   const json = await response.json();
   const convert = json.result.sort((a, b) => b.score - a.score);
   const list = document.querySelector('#score-container');
+  // Searching for the highest value
   const max = [];
   let high = 0;
   convert.forEach((game) => max.push(game.score));
@@ -13,7 +14,7 @@ const refresh = async () => {
       }
     }
   }
-
+  // Generating a new td for the table for each score
   list.innerHTML = '';
   convert.forEach((game) => {
     const row = document.createElement('tr');

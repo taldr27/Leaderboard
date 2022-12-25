@@ -6,7 +6,7 @@
 
 body {
   padding: 4.5em;
-  background-color: #72F2EB;
+  background-color: #72f2eb;
 }
 
 h1 {
@@ -62,12 +62,12 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #72F2EB;
+  background-color: #72f2eb;
 }
 
 tr:hover {
-  background-color: #FF4858;
-  border: #FF4858;
+  background-color: #ff4858;
+  border: #ff4858;
 }
 
 .form-class {
@@ -92,7 +92,7 @@ table {
 input[type="button"]:hover,
 [type="submit"]:hover {
   cursor: pointer;
-  background-color: #72F2EB;
+  background-color: #72f2eb;
   transition-duration: 0.2s;
 }
 
@@ -103,7 +103,7 @@ input[type="submit"] {
 
 input[type="text"]:focus {
   outline: none;
-  border: 2.5px solid #72F2EB;
+  border: 2.5px solid #72f2eb;
 }
 
 .best {
@@ -152,7 +152,7 @@ input[type="text"]:focus {
 
   input[type="button"]:active,
   [type="submit"]:active {
-    background-color: #00CCC0;
+    background-color: #00ccc0;
     transition-duration: 0.2s;
   }
 
@@ -164,5 +164,4 @@ input[type="text"]:focus {
   .table-container {
     min-width: 40%;
   }
-
 }
