@@ -6,9 +6,12 @@
 
 body {
   display: flex;
+  color: white;
   align-items: center;
   justify-content: center;
-  background-color: #72f2eb;
+  background-image: url('./images/4589.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -26,17 +29,17 @@ span {
 }
 
 .big-container {
-  background-color: #00ccc0;
+  background-color: #302569cc;
   border-radius: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 55%;
   padding: 6em;
 }
 
 .card {
-  width: 100%;
+  min-width: 110%;
 }
 
 .main-container {
@@ -56,21 +59,23 @@ span {
 table {
   border-collapse: collapse;
   width: 100%;
+  border: 2px solid #302569c9;
 }
 
 td,
 th {
-  border: 1px solid #33f5eb;
+  border: 1px solid #302569c9;
   padding: 0.5em;
 }
 
 tr:nth-child(even) {
-  background-color: #72f2eb;
+  background-color: #302569c9;
 }
 
 tr:hover {
-  background-color: #ff4858;
-  border: #ff4858;
+  background-color: #4c9bd3;
+  border: #eb86a6;
+  color: black;
 }
 
 .form-class {
@@ -79,8 +84,7 @@ tr:hover {
   gap: 0.4em;
 }
 
-input,
-table {
+input {
   border: 2.5px solid black;
   padding: 0.5em;
 }
@@ -95,8 +99,9 @@ table {
 input[type="button"]:hover,
 [type="submit"]:hover {
   cursor: pointer;
-  background-color: #72f2eb;
+  background-color: #935097;
   transition-duration: 0.2s;
+  color: white;
 }
 
 input[type="submit"] {
@@ -106,7 +111,7 @@ input[type="submit"] {
 
 input[type="text"]:focus {
   outline: none;
-  border: 2.5px solid #72f2eb;
+  border: 2.5px solid #935097;
 }
 
 .best {
@@ -118,8 +123,10 @@ input[type="text"]:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
-    background-color: #00ccc0;
+    height: 100vh;
+    background-image: url('./images/4589.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0;
   }
 
@@ -131,10 +138,12 @@ input[type="text"]:focus {
     width: 90%;
     padding: 0;
     padding-block: 3em;
+    min-width: auto;
   }
 
   .big-container {
     width: 100%;
+    height: 100vh;
     padding: 0;
     border-radius: 0;
   }
@@ -152,16 +161,17 @@ input[type="text"]:focus {
   input[type="button"]:hover,
   [type="submit"]:hover {
     background-color: white;
+    color: black;
   }
 
   input[type="button"]:active,
   [type="submit"]:active {
-    background-color: #00ccc0;
+    background-color: #935097;
     transition-duration: 0.2s;
   }
 
   .p {
-    color: black;
+    color: white;
     margin-top: 1em;
   }
 
