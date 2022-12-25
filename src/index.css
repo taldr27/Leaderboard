@@ -29,13 +29,13 @@ span {
 }
 
 .big-container {
-  background-color: #302569cc;
+  background-color: #302569d9;
   border-radius: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 55%;
-  padding: 6em;
+  width: 54%;
+  padding: 5em;
 }
 
 .card {
@@ -59,7 +59,7 @@ span {
 table {
   border-collapse: collapse;
   width: 100%;
-  border: 2px solid #302569c9;
+  border: 2px solid #221b468c;
 }
 
 td,
@@ -99,7 +99,7 @@ input {
 input[type="button"]:hover,
 [type="submit"]:hover {
   cursor: pointer;
-  background-color: #935097;
+  background-color: #4c9bd3;
   transition-duration: 0.2s;
   color: white;
 }
@@ -111,7 +111,7 @@ input[type="submit"] {
 
 input[type="text"]:focus {
   outline: none;
-  border: 2.5px solid #935097;
+  border: 2.5px solid #4c9bd3;
 }
 
 .best {
@@ -123,10 +123,7 @@ input[type="text"]:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-image: url('./images/4589.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 50em;
     padding: 0;
   }
 
@@ -143,7 +140,7 @@ input[type="text"]:focus {
 
   .big-container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0;
     border-radius: 0;
   }
