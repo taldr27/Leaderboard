@@ -1,5 +1,5 @@
 const refresh = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/gKe5ATGrB9p5WJ4187N5/scores/');
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/pRV48Z06IIlE4Cox5D3E/scores/');
   const json = await response.json();
   const convert = json.result.sort((a, b) => b.score - a.score);
   const list = document.querySelector('#score-container');
