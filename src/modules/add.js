@@ -14,16 +14,16 @@ const add = async (e) => {
     message.innerHTML = 'Please put something into the fields';
     section.insertAdjacentElement('afterend', message);
     setTimeout(() => { message.remove(); }, 2000);
-  } else if (name.length > 20 || scoreV.length > 7) {
+  } else if (name.length > 20 || scoreV.length > 8) {
     const section = document.getElementById('score-form');
     const message = document.createElement('p');
     message.className = 'p';
-    message.innerHTML = 'Name should not exceed 20 characters and Score should not exceed 7 characters!';
+    message.innerHTML = 'Name should not exceed 20 characters and Score should not exceed 8 characters!';
     section.insertAdjacentElement('afterend', message);
     setTimeout(() => { message.remove(); }, 3000);
   } else {
     // Calling the API to add
-    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0VkmMjM3V99zc8hBRUji/scores/', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/pRV48Z06IIlE4Cox5D3E/scores/', {
       method: 'POST',
       body: JSON.stringify({ user: name, score: scoreV }),
       headers: {
@@ -32,7 +32,7 @@ const add = async (e) => {
     });
     e.target.reset();
     refresh();
-    // 0VkmMjM3V99zc8hBRUji
+    // pRV48Z06IIlE4Cox5D3E
   }
 };
 
