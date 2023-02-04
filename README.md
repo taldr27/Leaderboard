@@ -13,13 +13,14 @@
 ## Getting Started
 
 ### Usage
+```
 - git clone git@github.com:taldr27/Leaderboard.git
 - cd Leaderboard
 - npm install
 - npm run start 
-
+```
 ### Live GitHub Page
-- https://taldr27.github.io/Leaderboard/
+- [Live Demo Link](https://taldr27.github.io/Leaderboard/)
 
 ## Authors
 
